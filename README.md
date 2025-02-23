@@ -5,5 +5,5 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 ## 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 
 [Ex1_ConstraintLayout](./Ex1_ConstraintLayout/app/src/main/)
-
+![Ex1_ConstraintLayout](./Images/Ex1_ConstraintLayout.png)
 
