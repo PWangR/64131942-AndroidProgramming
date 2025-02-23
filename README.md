@@ -13,3 +13,7 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 
 ![Ex1_ConstraintLayout](./Images/Ex1_ConstraintLayout.png)
 
+
+[Ex2_LinearLayout](./Ex2_LinearLayout/app/src/main/)
+![Ex2_LinearLayout](./Images/Ex2_LinearLayout.png)
+
