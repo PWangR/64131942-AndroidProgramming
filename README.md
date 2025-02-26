@@ -18,3 +18,8 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 
 ![Ex2_LinearLayout](./Images/Ex2_LinearLayout.png)
 
+
+[Ex3_SimpleSumApp](./Ex3_SimpleSumApp/app/src/main/)
+
+![Ex3_SimpleSumApp](./Images/Ex3_SimpleSumApp.png)
+
