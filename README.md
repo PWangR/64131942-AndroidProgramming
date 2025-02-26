@@ -23,3 +23,8 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 
 ![Ex3_SimpleSumApp](./Images/Ex3_SimpleSumApp.png)
 
+
+[Ex4_AddSubMulDiv_Onclick](./Ex4_AddSubMulDiv_Onclick/app/src/main/)
+
+![Ex4_AddSubMulDiv_Onclick](./Images/Ex4_AddSubMulDiv_Onclick.png)
+
