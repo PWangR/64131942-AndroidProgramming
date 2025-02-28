@@ -28,3 +28,8 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 
 ![Ex4_AddSubMulDiv_Onclick](./Images/Ex4_AddSubMulDiv_Onclick.png)
 
+
+[Ex5_AddSubMulDiv_Anynomous](./Ex5_AddSubMulDiv_Anynomous/app/src/main/)
+
+![Ex5_AddSubMulDiv_Anynomous](./Images/Ex5_AddSubMulDiv_Anynomous.png)
+
