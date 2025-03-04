@@ -34,27 +34,27 @@ public class MainActivity extends AppCompatActivity {
         float chieuDai = Float.parseFloat(nhap1.getText().toString());
         float chieuRong = Float.parseFloat(nhap2.getText().toString());
         float chuVi = 2 * (chieuDai + chieuRong);
-        ketQua.setText(String.valueOf(chuVi));
+        ketQua.setText(String.format("Chu vi HCN %s", chuVi));
     }
 
     public void DienTichHCN(View v) {
         float chieuDai = Float.parseFloat(nhap1.getText().toString());
         float chieuRong = Float.parseFloat(nhap2.getText().toString());
         float dienTich = chieuDai * chieuRong;
-        ketQua.setText(String.valueOf(dienTich));
+        ketQua.setText(String.format("Diện tích HCN %s", dienTich));
     }
 
     // Hình vuông
     public void ChuViHV(View v) {
         float canh = Float.parseFloat(nhap1.getText().toString());
         float chuVi = 4 * canh;
-        ketQua.setText(String.valueOf(chuVi));
+        ketQua.setText(String.format("Chu vi HV %s", chuVi));
     }
 
     public void DienTichHV(View v) {
         float canh = Float.parseFloat(nhap1.getText().toString());
         float dienTich = canh * canh;
-        ketQua.setText(String.valueOf(dienTich));
+        ketQua.setText(String.format("Diện tích Hv %s", dienTich));
     }
 
 }
