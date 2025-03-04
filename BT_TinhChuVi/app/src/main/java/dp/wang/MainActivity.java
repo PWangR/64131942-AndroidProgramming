@@ -9,8 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText nhap1, nhap2, ketQua;
-    Button btnChuViHCN, btnDienTichHCN, btnChuViHV, btnDienTichHV,
-            btnChuViTG, btnDienTichTG, btnChuViHT, btnDienTichHT;
+    Button btnChuViHCN, btnDienTichHCN, btnChuViHV, btnDienTichHV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

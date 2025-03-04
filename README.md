@@ -34,6 +34,12 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 ![Ex5_AddSubMulDiv_Anynomous](./Images/Ex5_AddSubMulDiv_Anynomous.png)
 
 
+[Ex5_AddSubMulDiv_Var](./Ex5_AddSubMulDiv_Var/app/src/main/)
+
+![Ex5_AddSubMulDiv_Var](./Images/Ex5_AddSubMulDiv_Var.png)
+
+
+
 ## 😽SOURCES CODE BÀI TẬP LÀM THÊM😽
 
 

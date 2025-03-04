@@ -21,31 +21,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TimDieuKhien();
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLy_Cong();
-            }
-        });
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLy_Tru();
-            }
-        });
-        bt3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLy_Nhan();
-            }
-        });
-        bt4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                XuLy_Chia();
-            }
-        });
+        bt1.setOnClickListener(NutCong);
+        bt2.setOnClickListener(NutTru);
+        bt3.setOnClickListener(NutNhan);
+        bt4.setOnClickListener(NutChia);
     }
+
+    View.OnClickListener NutCong = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            XuLy_Cong();
+        }
+    };
+    View.OnClickListener NutTru = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            XuLy_Tru();
+        }
+    };
+    View.OnClickListener NutNhan = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            XuLy_Nhan();
+        }
+    };
+    View.OnClickListener NutChia = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            XuLy_Chia();
+        }
+    };
 
     void TimDieuKhien()
     {
