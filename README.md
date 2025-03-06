@@ -55,4 +55,4 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 
 [LT_TimesTables](./LT_TimesTables/app/src/main/)
 
-<img src="./Images/LT_TimesTables.png" alt="LT_TimesTables" width="300" height="600">
+<img src="./Images/LT_TimesTables.png" alt="LT_TimesTables" width="281" height="500">
