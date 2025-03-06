@@ -61,7 +61,7 @@ Dưới đây là các bài tập mở rộng nhằm nâng cao kỹ năng lập 
 ### 🔹 LT_TimesTables
 - 📂 [Xem mã nguồn](./LT_TimesTables/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
-  <img src="./Images/LT_TimesTables.png" alt="LT_TimesTables" width="281" height="500">
+  ![LT_TimesTables](./Images/LT_TimesTables.png)
 
 ---
 
