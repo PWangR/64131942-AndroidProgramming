@@ -2,53 +2,61 @@ package dp.wang;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    EditText inputNumber;
-    Button calculateButton;
-    TextView resultText;
+    private TextView resultText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inputNumber = findViewById(R.id.input_number);
-        calculateButton = findViewById(R.id.calculate_button);
         resultText = findViewById(R.id.result_text);
 
-        calculateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calculateMultiplicationTable();
-            }
-        });
+        int[] buttonIds = {
+                R.id.button_1, R.id.button_2, R.id.button_3, R.id.button_4, R.id.button_5,
+                R.id.button_6, R.id.button_7, R.id.button_8, R.id.button_9, R.id.button_10
+        };
+
+        for (int i = 0; i < buttonIds.length; i++) {
+            final int number = i + 1;
+            Button button = findViewById(buttonIds[i]);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showMultiplicationTable(number);
+                }
+            });
+        }
     }
 
-    private void calculateMultiplicationTable() {
-        String input = inputNumber.getText().toString().trim();
-        if (input.isEmpty()) {
-            Toast.makeText(this, "Please enter a number!", Toast.LENGTH_SHORT).show();
-            return;
+    private void showMultiplicationTable(int number) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 1; i <= 10; i++) {
+            result.append(number).append(" x ").append(i).append(" = ")
+                    .append(number * i).append("\n");
         }
 
-        try {
-            int number = Integer.parseInt(input);
-            StringBuilder result = new StringBuilder();
+        // Đặt text trước
+        resultText.setText(result.toString());
 
-            for (int i = 1; i <= 10; i++) {
-                result.append(number).append(" x ").append(i).append(" = ").append(number * i).append("\n");
-            }
+        // Tạo hiệu ứng động: Fade In + Scale
+        resultText.setAlpha(0f); // Ban đầu mờ hoàn toàn
+        resultText.setScaleX(0.8f); // Thu nhỏ theo chiều ngang
+        resultText.setScaleY(0.8f); // Thu nhỏ theo chiều dọc
 
-            resultText.setText(result.toString());
-        } catch (NumberFormatException e) {
-            Toast.makeText(this, "Invalid input! Please enter a valid number.", Toast.LENGTH_SHORT).show();
-        }
+        // Thực hiện animation
+        resultText.animate()
+                .alpha(1f) // Hiển thị rõ dần
+                .scaleX(1f) // Phóng to về kích thước bình thường
+                .scaleY(1f) // Phóng to về kích thước bình thường
+                .setDuration(300) // Thời gian 300ms
+                .start();
     }
 }

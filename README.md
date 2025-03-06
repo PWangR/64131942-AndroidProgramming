@@ -51,3 +51,8 @@ Các bài thực hành và bài tập được lưu tại đây và Push lên se
 [BT_TinhCVvaDT](./BT_TinhChuVi/app/src/main/)
 
 ![BT_TinhCVvaDT](./Images/BT_ChuVi.png)
+
+
+[LT_TimesTables](./LT_TimesTables/app/src/main/)
+
+![LT_TimesTables](./Images/LT_TimesTables.png)
