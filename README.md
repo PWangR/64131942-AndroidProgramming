@@ -48,6 +48,11 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 🖼️ Hình ảnh minh họa:
   ![Ex5_AddSubMulDiv_ActivityListenner](./Images/Ex5_AddSubMulDiv_ActivityListenner.png)
 
+### 🔹 Ex6_IntentDonGian
+- 📂 [Xem mã nguồn](./Ex6_IntentDonGian/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  ![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian1.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian2.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian3.png)
+
 ---
 
 ## 📂 😽SOURCES CODE BÀI TẬP LÀM THÊM😽
