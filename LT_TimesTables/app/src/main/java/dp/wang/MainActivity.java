@@ -39,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private void showMultiplicationTable(int number) {
         StringBuilder result = new StringBuilder();
         for (int i = 1; i <= 10; i++) {
-            result.append(number).append(" x ").append(i).append(" = ")
-                    .append(number * i).append("\n");
+            result.append(number).append(" x ").append(i).append(" = ").append(number * i).append("\n");
         }
 
         // Đặt text trước
