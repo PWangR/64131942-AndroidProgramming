@@ -66,7 +66,11 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
     <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="150"/>
     <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="150"/>
     <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="150"/>
-    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="1550"/>
+<<<<<<< HEAD
+    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="150"/>
+=======
+    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="150"/>
+>>>>>>> 6dc95a331ef867966c3f30829c8c9bcfc09e14ad
   </div>
 ---
 ## 📂 😽SOURCES CODE BÀI TẬP VÍ DỤ😽
