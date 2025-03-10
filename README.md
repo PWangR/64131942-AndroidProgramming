@@ -62,11 +62,11 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 📂 [Xem mã nguồn](./Ex7_IntentLogin/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
  <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/Ex7_IntentLogin1.png" alt="Ex7_IntentLogin1" width="180"/>
-    <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="180"/>
-    <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="180"/>
-    <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="180"/>
-    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="180"/>
+    <img src="./Images/Ex7_IntentLogin1.png" alt="Ex7_IntentLogin1" width="150"/>
+    <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="150"/>
+    <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="150"/>
+    <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="150"/>
+    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="150"/>
   </div>
 ---
 ## 📂 😽SOURCES CODE BÀI TẬP VÍ DỤ😽
