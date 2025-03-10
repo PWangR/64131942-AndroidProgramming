@@ -53,6 +53,12 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 🖼️ Hình ảnh minh họa:
   ![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian1.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian2.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian3.png)
 
+
+### 🔹 Ex7_IntentLogin
+- 📂 [Xem mã nguồn](./Ex7_IntentLogin/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  ![Ex7_IntentLogin](./Images/Ex7_IntentLogin1.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin2.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin3.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin4.png)![Ex7_IntentLogin]![Ex7_IntentLogin](./Images/Ex7_IntentLogin5.png)
+
 ---
 
 ## 📂 😽SOURCES CODE BÀI TẬP LÀM THÊM😽
