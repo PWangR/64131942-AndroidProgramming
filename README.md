@@ -51,7 +51,11 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 ### 🔹 Ex6_IntentDonGian
 - 📂 [Xem mã nguồn](./Ex6_IntentDonGian/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
-  ![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian1.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian2.png)![Ex6_IntentDonGian](./Images/Ex6_IntentDonGian3.png)
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/Ex6_IntentDonGian1.png" alt="Ex6_IntentDonGian1" width="250"/>
+    <img src="./Images/Ex6_IntentDonGian2.png" alt="Ex6_IntentDonGian2" width="250"/>
+    <img src="./Images/Ex6_IntentDonGian3.png" alt="Ex6_IntentDonGian3" width="250"/>
+  </div>
 
 
 ### 🔹 Ex7_IntentLogin
