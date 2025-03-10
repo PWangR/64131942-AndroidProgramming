@@ -61,8 +61,13 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 ### 🔹 Ex7_IntentLogin
 - 📂 [Xem mã nguồn](./Ex7_IntentLogin/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
-  ![Ex7_IntentLogin](./Images/Ex7_IntentLogin1.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin2.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin3.png)![Ex7_IntentLogin](./Images/Ex7_IntentLogin4.png)![Ex7_IntentLogin]![Ex7_IntentLogin](./Images/Ex7_IntentLogin5.png)
-
+ <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/Ex7_IntentLogin1.png" alt="Ex7_IntentLogin1" width="250"/>
+    <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="250"/>
+    <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="250"/>
+    <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="250"/>
+    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="250"/>
+  </div>
 ---
 
 ## 📂 😽SOURCES CODE BÀI TẬP LÀM THÊM😽
