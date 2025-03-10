@@ -62,22 +62,22 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 📂 [Xem mã nguồn](./Ex7_IntentLogin/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
  <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/Ex7_IntentLogin1.png" alt="Ex7_IntentLogin1" width="180"/>
-    <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="180"/>
-    <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="180"/>
-    <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="180"/>
-    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="180"/>
+    <img src="./Images/Ex7_IntentLogin1.png" alt="Ex7_IntentLogin1" width="150"/>
+    <img src="./Images/Ex7_IntentLogin2.png" alt="Ex7_IntentLogin2" width="150"/>
+    <img src="./Images/Ex7_IntentLogin3.png" alt="Ex7_IntentLogin3" width="150"/>
+    <img src="./Images/Ex7_IntentLogin4.png" alt="Ex7_IntentLogin4" width="150"/>
+    <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="1550"/>
   </div>
 ---
 ## 📂 😽SOURCES CODE BÀI TẬP VÍ DỤ😽
 Dưới đây là các bài tập ví dụ nhằm làm quen với lập trình Android:
 
 ### 🔹 ViDu_Intent
-- 📂 [Xem mã nguồn](./Vidu_Intent/app/src/main/)
+- 📂 [Xem mã nguồn](./ViDu_Intent/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
  <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/Vidu_Intent1.png" alt="Vidu_Intent1" width="250"/>
-    <img src="./Images/Vidu_Intent2.png" alt="Vidu_Intent2" width="250"/>
+    <img src="./Images/VD_Intent1.png" alt="Vidu_Intent1" width="250"/>
+    <img src="./Images/ViDu_Intent2.png" alt="Vidu_Intent2" width="250"/>
   </div>
 
 
