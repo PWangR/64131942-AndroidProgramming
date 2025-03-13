@@ -82,6 +82,12 @@ Dưới đây là các bài tập ví dụ nhằm làm quen với lập trình A
   </div>
 
 
+  ### 🔹 VD_ThanhPhanGiaoDien
+- 📂 [Xem mã nguồn](./VD_ThanhPhanGiaoDien/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  ![Ex5_AddSubMulDiv_ActivityListenner](./Images/VD_ThanhPhanGiaoDien.png)
+
+  
 ## 📂 😽SOURCES CODE BÀI TẬP LÀM THÊM😽
 Dưới đây là các bài tập mở rộng nhằm nâng cao kỹ năng lập trình Android:
 
