@@ -15,7 +15,7 @@
         android:text="Clothing"
         android:textSize="36sp"
         android:layout_marginTop="40dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="poppins_semibold"
         android:textColor="@color/lavender"
         android:layout_centerHorizontal="true"/>
 
