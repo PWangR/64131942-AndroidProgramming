@@ -26,7 +26,10 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 ### 🔹 Ex3_SimpleSumApp
 - 📂 [Xem mã nguồn](./Ex3_SimpleSumApp/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
-  ![Ex3_SimpleSumApp](./Images/Ex3_SimpleSumApp.png)
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/Ex3_SimpleSumApp1.png" alt="Ex3_SimpleSumApp1" width="250"/>
+    <img src="./Images/Ex3_SimpleSumApp2.png" alt="Ex3_SimpleSumApp2" width="250"/>
+  </div>
 
 ### 🔹 Ex4_AddSubMulDiv_Onclick
 - 📂 [Xem mã nguồn](./Ex4_AddSubMulDiv_Onclick/app/src/main/)
