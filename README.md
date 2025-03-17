@@ -77,7 +77,10 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 ### 🔹 BTLT_DangNhap
 - 📂 [Xem mã nguồn](./BTLT_DangNhap/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
-  ![LT_TimesTables](./Images/BTLT_DangNhap.png)
+  !<div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/BTLT_DangNhap1.png" alt="BTLT_DangNhap1" width="300"/>
+    <img src="./Images/BTLT_DangNhap2.png" alt="BTLT_DangNhap2" width="300"/>
+  </div>
 
 
 ### 🔹 BT_Dashboard

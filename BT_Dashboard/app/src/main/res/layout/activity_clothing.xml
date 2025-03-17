@@ -8,21 +8,31 @@
     android:orientation="vertical"
     tools:context=".ClothingActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/clothTitle"
-        android:text="Clothing"
-        android:textSize="36sp"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/lavender"
-        android:layout_centerHorizontal="true"/>
 
     <ImageView
-        android:layout_width="500dp"
-        android:layout_height="500dp"
         android:id="@+id/clothImage"
+        android:layout_width="274dp"
+        android:layout_height="369dp"
         android:layout_below="@id/clothTitle"
-        android:src="@drawable/clothing"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="67dp"
+        android:src="@drawable/clothing" />
+
+    <TextView
+        android:id="@+id/clothTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="103dp"
+        android:text="Clothing"
+        android:textColor="@color/lavender"
+        android:textSize="36sp" />
 
 </RelativeLayout>
