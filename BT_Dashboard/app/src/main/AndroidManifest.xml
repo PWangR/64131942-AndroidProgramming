@@ -10,10 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Base.Theme.BT_Dashboard"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
         <activity
-            android:name="ClothingActivity"
+            android:name=".ClothingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

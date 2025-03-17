@@ -72,6 +72,21 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
     <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="200"/>
     <img src="./Images/Ex7_IntentLogin5.png" alt="Ex7_IntentLogin5" width="200"/>
   </div>
+
+
+### 🔹 BTLT_DangNhap
+- 📂 [Xem mã nguồn](./BTLT_DangNhap/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  ![LT_TimesTables](./Images/BTLT_DangNhap.png)
+
+
+### 🔹 BT_Dashboard
+- 📂 [Xem mã nguồn](./BT_Dashboard/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+ <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/BT_Dashboard1.png" alt="BT_Dashboard1" width="300"/>
+    <img src="./Images/BT_Dashboard2.png" alt="BT_Dashboard2" width="300"/>
+  </div>
 ---
 ## 📂 😽SOURCES CODE BÀI TẬP VÍ DỤ😽
 Dưới đây là các bài tập ví dụ nhằm làm quen với lập trình Android:
@@ -104,10 +119,6 @@ Dưới đây là các bài tập mở rộng nhằm nâng cao kỹ năng lập 
 - 🖼️ Hình ảnh minh họa:
   ![LT_TimesTables](./Images/LT_TimesTables.png)
 
-### 🔹 BTLT_DangNhap
-- 📂 [Xem mã nguồn](./BTLT_DangNhap/app/src/main/)
-- 🖼️ Hình ảnh minh họa:
-  ![LT_TimesTables](./Images/BTLT_DangNhap.png)
 
 ---
 
