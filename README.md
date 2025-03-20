@@ -8,6 +8,14 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 EX_Figma
+- 📂 [Xem mã nguồn](./EX_Figma/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  !<div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/EX_Figma1.png" alt="EX_Figma1" width="300"/>
+    <img src="./Images/EX_Figma2.png" alt="EX_Figma2" width="300"/>
+  </div>
+
 ### 🔹 Ex1_Hello
 - 📂 [Xem mã nguồn](./HelloAndroid/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
