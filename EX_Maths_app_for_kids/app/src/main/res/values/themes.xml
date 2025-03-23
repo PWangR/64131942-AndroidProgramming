@@ -1,9 +1,9 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.EX_Maths_app_for_kids" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Tùy chỉnh màu sắc (tùy chọn) -->
+        <item name="colorPrimary">#3F51B5</item> <!-- Màu chính -->
+        <item name="colorPrimaryDark">#303F9F</item> <!-- Màu tối hơn cho status bar -->
+        <item name="colorAccent">#FF4081</item> <!-- Màu nhấn (button, checkbox, v.v.) -->
     </style>
-
-    <style name="Theme.EX_Maths_app_for_kids" parent="Base.Theme.EX_Maths_app_for_kids" />
 </resources>
