@@ -13,10 +13,10 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 📂 [Xem mã nguồn](./EX_Maths_app_for_kids/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/EX_Maths_app_for_kids1.png" alt="EX_Maths_app_for_kids1" width="200"/>
-    <img src="./Images/EX_Maths_app_for_kids2.png" alt="EX_Maths_app_for_kids2" width="200"/>
-    <img src="./Images/EX_Maths_app_for_kids3.png" alt="EX_Maths_app_for_kids3" width="200"/>
-    <img src="./Images/EX_Maths_app_for_kids4.png" alt="EX_Maths_app_for_kids4" width="200"/>
+    <img src="./Images/EX_Maths_app_for_kids1.png" alt="EX_Maths_app_for_kids1" width="250"/>
+    <img src="./Images/EX_Maths_app_for_kids2.png" alt="EX_Maths_app_for_kids2" width="250"/>
+    <img src="./Images/EX_Maths_app_for_kids3.png" alt="EX_Maths_app_for_kids3" width="250"/>
+    <img src="./Images/EX_Maths_app_for_kids4.png" alt="EX_Maths_app_for_kids4" width="250"/>
   </div>
 
 
