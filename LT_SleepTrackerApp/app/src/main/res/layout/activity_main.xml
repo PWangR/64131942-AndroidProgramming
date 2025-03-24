@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Card for Sleep Time -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F8F9FA"
+        app:strokeColor="#E0E0E0"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn giờ đi ngủ"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSleepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22:00"
+                android:textSize="32sp"
+                android:textColor="#0288D1"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/rounded_background"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card for Wake Up Time -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardWakeUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F8F9FA"
+        app:strokeColor="#E0E0E0"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cardSleep"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn giờ thức dậy"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvWakeUpTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:00"
+                android:textSize="32sp"
+                android:textColor="#0288D1"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/rounded_background"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Calculate Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Tính thời gian ngủ"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        app:backgroundTint="#0288D1"
+        app:rippleColor="#42A5F5"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/cardWakeUp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Sleep Duration Result -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSleepDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#0288D1"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Sleep Suggestion -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSleepSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#388E3C"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvSleepDuration"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
