@@ -13,7 +13,7 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 🖼️ Hình ảnh minh họa:
   <div style="display: flex; justify-content: center; gap: 10px;">
     <img src="./Images/EX_RecycleView.png" alt="EX_RecycleView" width="250"/>
-    <img src="./Images/EX_RecycleView1.png" alt="EX_RecycleView1" width="250"/>
+    <img src="./Images/EX_RecycleView2.png" alt="EX_RecycleView1" width="250"/>
   </div>
 
 
