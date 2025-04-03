@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 dsHoa
         );
 
-        ListView ds = findViewById(R.id.lv1);
+        ListView ds = findViewById(R.id.rc1);
         ds.setAdapter(adapterHoa);
 
         ds.setOnItemClickListener(new AdapterView.OnItemClickListener() {

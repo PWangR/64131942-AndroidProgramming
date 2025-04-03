@@ -8,6 +8,14 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 EX_RecycleView
+- 📂 [Xem mã nguồn](./EX_RecycleView/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/EX_RecycleView.png" alt="EX_RecycleView" width="250"/>
+    <img src="./Images/EX_RecycleView1.png" alt="EX_RecycleView1" width="250"/>
+  </div>
+
 
 ### 🔹 LT_SleepTrackerApp
 - 📂 [Xem mã nguồn](./LT_SleepTrackerApp/app/src/main/)
