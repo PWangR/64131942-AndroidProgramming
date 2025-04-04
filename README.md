@@ -8,6 +8,19 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 ThiGK
+- 📂 [Xem mã nguồn](./ThiGK/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/1.png" alt="EX_RecycleView" width="200"/>
+    <img src="./Images/2.png" alt="EX_RecycleView1" width="200"/>
+    <img src="./Images/3.png" alt="EX_RecycleView1" width="200"/>
+    <img src="./Images/4.png" alt="EX_RecycleView1" width="200"/>
+    <img src="./Images/aboutme.png" alt="EX_RecycleView1" width="200"/>
+    <img src="./Images/lt.png" alt="EX_RecycleView1" width="200"/>
+  </div>
+
+
 ### 🔹 EX_RecycleView
 - 📂 [Xem mã nguồn](./EX_RecycleView/app/src/main/)
 - 🖼️ Hình ảnh minh họa:

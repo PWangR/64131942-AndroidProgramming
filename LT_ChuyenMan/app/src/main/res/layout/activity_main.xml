@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/gradient_background">
+
+        <!-- Tiêu đề với hiệu ứng neon -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn Màn Hình"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:shadowColor="#00FFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10" />
+
+        <!-- Nút bấm 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="#FFF3E0">
+
+            <Button
+                android:id="@+id/button_screen_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Màn Hình 1"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:drawablePadding="12dp"
+                android:stateListAnimator="@animator/button_pop"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nút bấm 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="#E8F5E9">
+
+            <Button
+                android:id="@+id/button_screen_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Màn Hình 2"
+                android:textColor="#4CAF50"
+                android:textSize="18sp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:drawablePadding="12dp"
+                android:stateListAnimator="@animator/button_pop"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nút bấm 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="#E3F2FD">
+
+            <Button
+                android:id="@+id/button_screen_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Màn Hình 3"
+                android:textColor="#2196F3"
+                android:textSize="18sp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:drawablePadding="12dp"
+                android:stateListAnimator="@animator/button_pop"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nút bấm 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="10dp"
+            card_view:cardBackgroundColor="#FCE4EC">
+
+            <Button
+                android:id="@+id/button_screen_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Màn Hình 4"
+                android:textColor="#E91E63"
+                android:textSize="18sp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:drawablePadding="12dp"
+                android:stateListAnimator="@animator/button_pop"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

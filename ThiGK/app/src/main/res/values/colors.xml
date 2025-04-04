@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="primary_text">#333333</color>
+    <color name="black">#000000</color>
+    <color name="primary_blue">#4FC3F7</color>       <!-- Xanh nước -->
+    <color name="light_blue">#81D4FA</color>         <!-- Xanh da trời -->
+    <color name="accent_pink">#F8BBD0</color>        <!-- Hồng pastel -->
+    <color name="soft_black">#263238</color>         <!-- Đen dịu -->
+    <color name="soft_gray">#ECEFF1</color>          <!-- Xám sáng -->
+    <color name="white">#FFFFFF</color>
+    <color name="silver">#CFD8DC</color>             <!-- Bạc -->
+    <color name="accent_cyan">#00BCD4</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_light">#757575</color>
+</resources>

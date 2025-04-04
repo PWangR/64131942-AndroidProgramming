@@ -1,8 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.LT_ThiGK" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.LT_ThiGK" parent="Theme.AppCompat.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Màu cho chế độ sáng -->
+        <color name="primary_blue">#0099FF</color>
+        <color name="primary_blue_variant">#006BB3</color>
+        <color name="soft_gray">#F0F0F0</color>
+        <color name="white">#FFFFFF</color>
+        <color name="black">#000000</color>
+
+        <!-- Màu cho chế độ tối -->
+        <color name="primary_blue_dark">#004B87</color>
+        <color name="soft_gray_dark">#333333</color>
+        <color name="white_dark">#E0E0E0</color>
+        <color name="black_dark">#FFFFFF</color>
     </style>
 
     <style name="Theme.LT_ThiGK" parent="Base.Theme.LT_ThiGK" />
