@@ -8,6 +8,13 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 EX_Fragment_Staticaly
+- 📂 [Xem mã nguồn](./EX_Fragment_Staticaly/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/EX_Fragment_Staticaly.png" alt="EX_RecycleView" width="200"/>
+  </div>
+
 ### 🔹 ThiGK
 - 📂 [Xem mã nguồn](./ThiGK/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
