@@ -12,7 +12,7 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 📂 [Xem mã nguồn](./EX_Fragment_Dynamic/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/EX_Fragment_Dynamic.png" alt="EX_RecycleView" width="200"/>
+    <img src="./Images/EX_Fragment_Dynamic.png" alt="EX_RecycleView" width="500"/>
   </div>
 
 ### 🔹 EX_Fragment_Staticaly
