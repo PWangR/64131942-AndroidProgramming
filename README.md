@@ -8,12 +8,23 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 EX_Replacing_Fragments_Dynamically
+- 📂 [Xem mã nguồn](./EX_Replacing_Fragments_Dynamically/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/EX_Replacing_Fragments_Dynamically.png" alt="Fragment" width="200"/>
+    <img src="./Images/EX_Replacing_Fragments_Dynamically1.png" alt="Fragment" width="200"/>
+    <img src="./Images/EX_Replacing_Fragments_Dynamically2.png" alt="Fragment" width="200"/>
+    <img src="./Images/EX_Replacing_Fragments_Dynamically3.png" alt="Fragment" width="200"/>
+  </div>
+
 ### 🔹 EX_Fragment_Dynamic
 - 📂 [Xem mã nguồn](./EX_Fragment_Dynamic/app/src/main/)
-- 🖼️ Hình ảnh minh họa:
+- 🖼️ Hình ảnh minh họa:=
   <div style="display: flex; justify-content: center; gap: 10px;">
     <img src="./Images/EX_Fragment_Dynamic.png" alt="EX_RecycleView" width="500"/>
   </div>
+  
 
 ### 🔹 EX_Fragment_Staticaly
 - 📂 [Xem mã nguồn](./EX_Fragment_Staticaly/app/src/main/)
