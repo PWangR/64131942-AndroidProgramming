@@ -8,6 +8,15 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 BottomNavgation
+- 📂 [Xem mã nguồn](./BotNav/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/BotNav1.png" alt="Fragment" width="200"/>
+    <img src="./Images/BotNav2.png" alt="Fragment" width="200"/>
+    <img src="./Images/BotNav3.png" alt="Fragment" width="200"/>
+  </div>
+
 ### 🔹 EX_Replacing_Fragments_Dynamically
 - 📂 [Xem mã nguồn](./EX_Replacing_Fragments_Dynamically/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
