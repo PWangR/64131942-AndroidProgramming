@@ -8,6 +8,14 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 QuanLyChiTieu
+- 📂 [Xem mã nguồn](./QuanLyChiTieu/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/FireBase.png" alt="Fragment" width="300"/>
+    <img src="./Images/FireBaseDemo.png" alt="Fragment" width="300"/>
+  </div>
+
 ### 🔹 BottomNavgation
 - 📂 [Xem mã nguồn](./BotNav/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
