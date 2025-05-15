@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:padding="24dp">
+
+    <!-- Logo hoạt hình -->
+    <ImageView
+        android:id="@+id/imgMascot"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/ic_trophy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Lời chào -->
+    <!-- Nút bắt đầu -->
+
+    <TextView
+        android:id="@+id/txtTotalStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="🌟 Sao đạt được: 0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMascot" />
+
+    <Button
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Bắt đầu học"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalStars" />
+
+    <!-- Nút chọn chủ đề -->
+    <Button
+        android:id="@+id/btnChooseTopic"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:text="Chọn chủ đề"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartQuiz" />
+
+    <!-- Nút cài đặt -->
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:text="Lịch sử"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChooseTopic" />
+    <!-- Nút trợ giúp -->
+</androidx.constraintlayout.widget.ConstraintLayout>

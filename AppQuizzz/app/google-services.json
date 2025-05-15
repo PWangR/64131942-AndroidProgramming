@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "234373831099",
+    "project_id": "appquizzz",
+    "storage_bucket": "appquizzz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234373831099:android:9d4d19725617b631234c9e",
+        "android_client_info": {
+          "package_name": "dp.wang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChreFmjx9cZ1hxDl70vMk3BIMAXPuXKTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dp.wang">
 
     <application
         android:allowBackup="true"
@@ -13,14 +14,9 @@
         android:theme="@style/Theme.AppQuizzz"
         tools:targetApi="31">
         <activity
-            android:name=".ReviewWrongAnswersActivity"
+            android:name=".AddQuestionActivity"
             android:exported="false" />
-        <activity
-            android:name=".StatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".QuizActivity"
-            android:exported="false" />
+        <!-- MainActivity: Màn hình chính, cần exported=true vì có intent-filter -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -29,7 +25,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- QuizActivity: Không cần truy cập từ bên ngoài, exported=false -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" /> <!-- UploadQuestions: Chỉ dùng để lưu dữ liệu cục bộ, exported=false -->
+        <activity
+            android:name=".UploadQuestions"
+            android:exported="false" />
     </application>
 
 </manifest>

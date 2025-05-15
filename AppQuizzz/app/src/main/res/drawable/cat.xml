@@ -1,0 +1,67 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="125dp"
+    android:height="125dp"
+    android:viewportWidth="125"
+    android:viewportHeight="125">
+    <group>
+        <!-- Đầu khỉ -->
+        <path
+            android:fillColor="#8D6E63"
+            android:pathData="M62.5,15
+                              a30,30 0 1,1 0.1,0Z" />
+        <!-- Tai trái -->
+        <path
+            android:fillColor="#A1887F"
+            android:pathData="M30,35
+                              a10,10 0 1,1 0.1,0Z" />
+        <!-- Tai phải -->
+        <path
+            android:fillColor="#A1887F"
+            android:pathData="M95,35
+                              a10,10 0 1,1 0.1,0Z" />
+        <!-- Mặt khỉ -->
+        <path
+            android:fillColor="#D7CCC8"
+            android:pathData="M62.5,35
+                              a20,20 0 1,1 0.1,0Z" />
+        <!-- Mắt trái -->
+        <path
+            android:fillColor="#000000"
+            android:pathData="M50,40
+                              a2,2 0 1,1 0.1,0Z" />
+        <!-- Mắt phải -->
+        <path
+            android:fillColor="#000000"
+            android:pathData="M75,40
+                              a2,2 0 1,1 0.1,0Z" />
+        <!-- Miệng -->
+        <path
+            android:strokeColor="#5D4037"
+            android:strokeWidth="2"
+            android:fillColor="none"
+            android:pathData="M55,55
+                              q7,10 15,0" />
+        <!-- Laptop -->
+        <path
+            android:fillColor="#90A4AE"
+            android:pathData="M40,80
+                              h45
+                              v10
+                              h-45
+                              Z" />
+        <!-- Tay trái gõ máy -->
+        <path
+            android:strokeColor="#8D6E63"
+            android:strokeWidth="3"
+            android:fillColor="none"
+            android:pathData="M35,70
+                              q5,10 10,10" />
+        <!-- Tay phải gõ máy -->
+        <path
+            android:strokeColor="#8D6E63"
+            android:strokeWidth="3"
+            android:fillColor="none"
+            android:pathData="M90,70
+                              q-5,10 -10,10" />
+    </group>
+</vector>

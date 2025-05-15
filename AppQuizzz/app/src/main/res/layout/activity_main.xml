@@ -1,36 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:gravity="center">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="Chọn Chủ Đề Quiz"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/javaButton"
+        app:layout_constraintEnd_toEndOf="@+id/javaButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/javaButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/javaButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Java"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/pythonButton"
+        app:layout_constraintEnd_toEndOf="@+id/pythonButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pythonButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/pythonButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Python"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/cppButton"
+        app:layout_constraintEnd_toEndOf="@+id/cppButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/cppButton"
+        app:layout_constraintTop_toBottomOf="@+id/javaButton"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/cppButton"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="C++"/>
-</LinearLayout>
+        android:layout_marginTop="16dp"
+        android:text="C++"
+        app:layout_constraintBottom_toTopOf="@+id/cButton"
+        app:layout_constraintEnd_toEndOf="@+id/cButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/cButton"
+        app:layout_constraintTop_toBottomOf="@+id/pythonButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+        app:layout_constraintEnd_toEndOf="@+id/uploadButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/uploadButton"
+        app:layout_constraintTop_toBottomOf="@+id/cppButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tải Câu Hỏi"
+        app:layout_constraintBottom_toTopOf="@+id/addQuestionButton"
+        app:layout_constraintEnd_toEndOf="@+id/addQuestionButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addQuestionButton"
+        app:layout_constraintTop_toBottomOf="@+id/cButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/addQuestionButton"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm Câu Hỏi Mới"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

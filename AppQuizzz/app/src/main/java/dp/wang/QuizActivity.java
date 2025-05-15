@@ -14,6 +14,7 @@ public class QuizActivity extends AppCompatActivity {
     private List<Question> questions;
     private int currentQuestionIndex = 0;
     private int score = 0;
+    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +28,11 @@ public class QuizActivity extends AppCompatActivity {
         option3Button = findViewById(R.id.option3Button);
         option4Button = findViewById(R.id.option4Button);
 
+        dbHelper = new DatabaseHelper(this);
         String topic = getIntent().getStringExtra("TOPIC");
-        questions = getQuestionsForTopic(topic);
+        questions = new ArrayList<>();
 
-        if (questions.isEmpty()) {
-            Toast.makeText(this, "Không có câu hỏi cho chủ đề này!", Toast.LENGTH_SHORT).show();
-            finish();
-            return;
-        }
-
-        displayQuestion();
+        getQuestionsForTopic(topic);
 
         option1Button.setOnClickListener(v -> checkAnswer(0));
         option2Button.setOnClickListener(v -> checkAnswer(1));
@@ -45,6 +41,11 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void displayQuestion() {
+        if (questions.isEmpty()) {
+            Toast.makeText(this, "Không có câu hỏi cho chủ đề này!", Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
         Question currentQuestion = questions.get(currentQuestionIndex);
         questionTextView.setText(currentQuestion.getQuestionText());
         String[] options = currentQuestion.getOptions();
@@ -73,28 +74,13 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    private List<Question> getQuestionsForTopic(String topic) {
-        List<Question> questions = new ArrayList<>();
-        switch (topic) {
-            case "Java":
-                questions.add(new Question("Kiểu dữ liệu nào dùng để lưu số nguyên trong Java?",
-                        new String[]{"int", "float", "String", "boolean"}, 0));
-                questions.add(new Question("Phương thức nào dùng để in ra màn hình trong Java?",
-                        new String[]{"print()", "System.out.println()", "write()", "display()"}, 1));
-                break;
-            case "Python":
-                questions.add(new Question("Cú pháp nào dùng để khai báo hàm trong Python?",
-                        new String[]{"function", "def", "fun", "proc"}, 1));
-                questions.add(new Question("Thư viện nào dùng để làm việc với mảng trong Python?",
-                        new String[]{"pandas", "numpy", "matplotlib", "requests"}, 1));
-                break;
-            case "C++":
-                questions.add(new Question("Ký hiệu nào dùng để truy cập thành viên lớp trong C++?",
-                        new String[]{".", "->", "::", "&"}, 0));
-                questions.add(new Question("Hàm nào là điểm bắt đầu của chương trình C++?",
-                        new String[]{"start()", "main()", "begin()", "init()"}, 1));
-                break;
+    private void getQuestionsForTopic(String topic) {
+        questions = dbHelper.getQuestionsForTopic(topic);
+        if (questions.isEmpty()) {
+            Toast.makeText(this, "Không có câu hỏi cho chủ đề này!", Toast.LENGTH_SHORT).show();
+            finish();
+        } else {
+            displayQuestion();
         }
-        return questions;
     }
 }
