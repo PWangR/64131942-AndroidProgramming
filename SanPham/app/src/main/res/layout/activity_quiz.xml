@@ -1,69 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
-    android:background="#2A3840">
+    android:padding="16dp"
+    android:background="@color/background_light">
 
-    <!-- Thanh tiến trình ở trên -->
+    <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="12dp"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
         android:max="100"
         android:progress="0"
-        android:progressTint="#00BCD4"
-        android:backgroundTint="#00B0FF"
-        android:layout_alignParentTop="true"
+        android:progressTint="@color/orange2"
+        android:backgroundTint="@color/orange2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"/>
 
-    <!-- Câu hỏi -->
+    <!-- Question Text -->
     <TextView
         android:id="@+id/txtQuestion"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Câu hỏi sẽ hiển thị ở đây"
         android:textSize="22sp"
-        android:textColor="#00E5FF"
-        android:textStyle="bold"
-        android:layout_below="@id/progressBar"
-        android:layout_marginBottom="32dp"/>
+        android:textColor="@color/orange2"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="6dp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginBottom="24dp"/>
 
-    <!-- Các nút trả lời -->
+    <!-- Options Container -->
     <LinearLayout
         android:id="@+id/optionsLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_below="@id/txtQuestion"
-        android:weightSum="4"
-        android:divider="?android:attr/dividerVertical"
-        android:showDividers="middle">
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txtQuestion"
+        app:layout_constraintBottom_toTopOf="@id/imgMascot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.5"
+        android:layout_marginBottom="16dp">
 
-        <Button
-            android:id="@+id/btnA"
-            style="@style/QuizOptionButton"
-            android:text="Đáp án A"/>
+        <!-- Option A -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/orange">
 
-        <Button
-            android:id="@+id/btnB"
-            style="@style/QuizOptionButton"
-            android:text="Đáp án B"
-            android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/orange2"
+                android:text="Đáp án A"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:stateListAnimator="@null"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/btnC"
-            style="@style/QuizOptionButton"
-            android:text="Đáp án C"
-            android:layout_marginTop="12dp"/>
+        <!-- Option B -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/orange">
 
-        <Button
-            android:id="@+id/btnD"
-            style="@style/QuizOptionButton"
-            android:text="Đáp án D"
-            android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/orange2"
+                android:text="Đáp án B"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:stateListAnimator="@null"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Option C -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/orange">
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/orange2"
+                android:text="Đáp án C"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:stateListAnimator="@null"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Option D -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/orange">
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/orange2"
+                android:text="Đáp án D"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:stateListAnimator="@null"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
-</RelativeLayout>
+    <!-- Mascot Image -->
+    <ImageView
+        android:id="@+id/imgMascot"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:contentDescription="Linh vật"
+        android:src="@drawable/mascot_default"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

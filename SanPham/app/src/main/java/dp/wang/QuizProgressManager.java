@@ -15,7 +15,7 @@ public class QuizProgressManager {
 
     // Lưu tổng số sao (cộng dồn)
     public void addStarIfPerfectScore(int score) {
-        if (score == 10) {
+        if (score >= 10) {
             int currentStars = getTotalStars();
             editor.putInt("total_stars", currentStars + 1);
             editor.apply();

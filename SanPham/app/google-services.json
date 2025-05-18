@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704325233896",
+    "project_id": "sanpham-88952",
+    "storage_bucket": "sanpham-88952.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704325233896:android:19fc8439d30e5eeecd6d5d",
+        "android_client_info": {
+          "package_name": "dp.wang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ2nUhM6b4CCSMuhzY-Y0ELcl85M8C8Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

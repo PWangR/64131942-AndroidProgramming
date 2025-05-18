@@ -5,7 +5,7 @@
         <!-- Ví dụ -->
         <item name="colorPrimary">#00796B</item>
         <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="android:windowBackground">#E0F7FA</item>
+        <item name="android:windowBackground">@color/orange</item>
     </style>
 
     <style name="Theme.SanPham" parent="Base.Theme.SanPham" />

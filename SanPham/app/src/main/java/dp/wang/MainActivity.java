@@ -2,53 +2,46 @@ package dp.wang;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnStartQuiz, btnChooseTopic;
     TextView txtTotalStars;
     QuizProgressManager progressManager;
+
+    BottomNavigationView bottom_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnStartQuiz = findViewById(R.id.btnStartQuiz);
-        btnChooseTopic = findViewById(R.id.btnChooseTopic);
-
-        txtTotalStars = findViewById(R.id.txtTotalStars); // gắn đúng id
+        // Hiển thị tổng số sao
+        txtTotalStars = findViewById(R.id.txtTotalStars);
         progressManager = new QuizProgressManager(this);
-
         int stars = progressManager.getTotalStars();
         txtTotalStars.setText("🌟 Sao đạt được: " + stars);
 
-        Button btnHistory = findViewById(R.id.btnHistory);
-        btnHistory.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-            startActivity(intent);
+        bottom_nav = findViewById(R.id.bottomNavigation);
+        bottom_nav.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_start) {
+                startActivity(new Intent(this, UploadQuestionsActivity.class));
+                return true;
+            } else if (id == R.id.nav_topic) {
+                startActivity(new Intent(this, ChooseTopicActivity.class));
+                return true;
+            } else if (id == R.id.nav_history) {
+                startActivity(new Intent(this, HistoryActivity.class));
+                return true;
+            }
+
+            return false;
         });
-
-
-
-        btnStartQuiz.setOnClickListener(v -> {
-            Intent intent = new Intent(this, QuizActivity.class);
-            intent.putExtra("topic", "all"); // hoặc mặc định Java
-            startActivity(intent);
-        });
-
-        btnChooseTopic.setOnClickListener(v -> {
-            startActivity(new Intent(this, ChooseTopicActivity.class));
-        });
-
     }
 }
-
