@@ -1,25 +1,46 @@
 package dp.wang;
 
-public class Question {
+import java.io.Serializable;
+import java.util.List;
+
+public class Question implements Serializable {
     private String question;
-    private String[] options;
-    private int correctAnswerIndex;
+    private List<String> options;  // dùng List<String>
+    private int answerIndex;
 
-    // Constructor mặc định bắt buộc
-    public Question() {}
-
-    public Question(String question, String[] options, int correctAnswerIndex) {
-        this.question = question;
-        this.options = options;
-        this.correctAnswerIndex = correctAnswerIndex;
+    public Question() {
+        // Firebase cần constructor rỗng
     }
 
-    public String getQuestion() { return question; }
-    public void setQuestion(String question) { this.question = question; }
+    public Question(String question, List<String> options, int answerIndex) {
+        this.question = question;
+        this.options = options;
+        this.answerIndex = answerIndex;
+    }
 
-    public String[] getOptions() { return options; }
-    public void setOptions(String[] options) { this.options = options; }
+    // Getter
+    public String getQuestion() {
+        return question;
+    }
 
-    public int getCorrectAnswerIndex() { return correctAnswerIndex; }
-    public void setCorrectAnswerIndex(int correctAnswerIndex) { this.correctAnswerIndex = correctAnswerIndex; }
+    public List<String> getOptions() {
+        return options;
+    }
+
+    public int getAnswerIndex() {
+        return answerIndex;
+    }
+
+    // Setter (bắt buộc để Firebase ánh xạ được)
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public void setOptions(List<String> options) {
+        this.options = options;
+    }
+
+    public void setAnswerIndex(int answerIndex) {
+        this.answerIndex = answerIndex;
+    }
 }

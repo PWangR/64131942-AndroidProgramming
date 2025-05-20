@@ -5,6 +5,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,6 +13,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -35,18 +38,28 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        imgMascot = findViewById(R.id.imgMascot);
-
+        // Lấy topic từ Intent ngay đầu
         topic = getIntent().getStringExtra("topic");
+        Log.d("Quiz", "Topic nhận được từ Intent: '" + topic + "'");
         if (topic == null) topic = "default_topic";
 
+        // Lấy danh sách câu hỏi sau khi có topic
         questionList = QuestionBank.getQuestionsByTopic(topic);
+        Log.d("Quiz", "Số câu hỏi nhận được: " + questionList.size());
+
+        for (Question q : questionList) {
+            Log.d("Quiz", "Q: " + q.getQuestion() + " | Options: " + q.getOptions().toString());
+        }
+
 
         if (questionList == null || questionList.isEmpty()) {
             Toast.makeText(this, "Không có câu hỏi cho chủ đề này", Toast.LENGTH_LONG).show();
             finish();
             return;
         }
+
+        // Phần còn lại giữ nguyên
+        imgMascot = findViewById(R.id.imgMascot);
 
         Collections.shuffle(questionList);
         int questionCount = Math.min(10, questionList.size());
@@ -67,16 +80,18 @@ public class QuizActivity extends AppCompatActivity {
         loadNextQuestion();
     }
 
+
     private void loadNextQuestion() {
         if (currentIndex < questionList.size()) {
             currentQuestion = questionList.get(currentIndex);
             txtQuestion.setText(currentQuestion.getQuestion());
 
-            String[] options = currentQuestion.getOptions();
-            btnA.setText(options[0]);
-            btnB.setText(options[1]);
-            btnC.setText(options[2]);
-            btnD.setText(options[3]);
+            List<String> options = currentQuestion.getOptions();
+            btnA.setText(options.get(0));
+            btnB.setText(options.get(1));
+            btnC.setText(options.get(2));
+            btnD.setText(options.get(3));
+
 
             enableAllButtons();
             resetButtonColors();
@@ -94,7 +109,7 @@ public class QuizActivity extends AppCompatActivity {
     private void handleAnswer(int selectedIndex, Button selectedButton) {
         disableAllButtons();
 
-        int correctIndex = currentQuestion.getCorrectAnswerIndex();
+        int correctIndex = currentQuestion.getAnswerIndex();
         if (selectedIndex == correctIndex) {
             score++;
             selectedButton.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));

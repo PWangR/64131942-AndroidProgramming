@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên chủ đề (ví dụ: Java)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Câu hỏi"
+            android:layout_marginTop="16dp" />
+
+        <!-- Các đáp án -->
+        <EditText
+            android:id="@+id/edtOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đáp án 1" />
+
+        <EditText
+            android:id="@+id/edtOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đáp án 2" />
+
+        <EditText
+            android:id="@+id/edtOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đáp án 3" />
+
+        <EditText
+            android:id="@+id/edtOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đáp án 4" />
+
+        <!-- Chọn đáp án đúng -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <RadioButton android:id="@+id/rbOption1" android:text="Đáp án 1 đúng"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/rbOption2" android:text="Đáp án 2 đúng"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/rbOption3" android:text="Đáp án 3 đúng"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/rbOption4" android:text="Đáp án 4 đúng"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSaveQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm câu hỏi"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

@@ -42,10 +42,9 @@ public class ResultActivity extends AppCompatActivity {
         txtResult.setText("Điểm của bạn: " + score + " / " + total + "\nChủ đề: " + topic);
 
         QuizProgressManager progressManager = new QuizProgressManager(this);
-        int scoree = 10; // ví dụ điểm
 
         // Ghi nhận nếu đạt điểm tuyệt đối
-        progressManager.addStarIfPerfectScore(scoree);
+        progressManager.addStarIfPerfectScore(score);
 
         btnRetry.setOnClickListener(v -> {
             Intent intent = new Intent(ResultActivity.this, QuizActivity.class);

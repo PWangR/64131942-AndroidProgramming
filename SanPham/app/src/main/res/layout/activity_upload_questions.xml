@@ -1,15 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-    <Button
-        android:id="@+id/btnUploadQuestions"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload câu hỏi lên Firestore" />
-</LinearLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/orange"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginHorizontal="12dp"
+        android:backgroundTint="@color/orange"
+        android:clipToPadding="false"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧠 Quiz về lập trình"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_trophy"
+            android:contentDescription="Quiz Image"
+            android:layout_marginBottom="24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Chọn chủ đề:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTopic"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/topic_array"
+            android:paddingStart="16dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <Button
+            android:id="@+id/btnUploadQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📤 Upload câu hỏi lên Firebase"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnDownloadAndStartQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="⬇️ Tải và bắt đầu Quiz"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
