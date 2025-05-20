@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
 
             if (id == R.id.nav_start) {
-                startActivity(new Intent(this, UploadQuestionsActivity.class));
+                startActivity(new Intent(this, AddQuestionActivity.class));
                 return true;
             } else if (id == R.id.nav_topic) {
                 startActivity(new Intent(this, ChooseTopicActivity.class));
