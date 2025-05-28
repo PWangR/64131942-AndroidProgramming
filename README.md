@@ -12,15 +12,15 @@ Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh 
 - 📂 [Xem mã nguồn](./SanPham/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="./Images/SP1.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP2.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP3.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP4.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP5.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP6.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP7.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP8.png" alt="SPSP" width="200"/>
-    <img src="./Images/SP9.png" alt="SPSP" width="200"/>
+    <img src="./Images/sp1.png" alt="SP" width="200"/>
+    <img src="./Images/sp2.png" alt="SP" width="200"/>
+    <img src="./Images/sp3.png" alt="SP" width="200"/>
+    <img src="./Images/sp4.png" alt="SP" width="200"/>
+    <img src="./Images/sp5.png" alt="SP" width="200"/>
+    <img src="./Images/sp6.png" alt="SP" width="200"/>
+    <img src="./Images/sp7.png" alt="SP" width="200"/>
+    <img src="./Images/sp8.png" alt="SP" width="200"/>
+    <img src="./Images/sp9.png" alt="SP" width="200"/>
   </div>
 
 ### 🔹 QuanLyChiTieu
