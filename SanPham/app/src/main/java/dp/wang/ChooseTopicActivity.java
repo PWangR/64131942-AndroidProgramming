@@ -51,7 +51,9 @@ public class ChooseTopicActivity extends AppCompatActivity {
                 for (DataSnapshot topicSnapshot : snapshot.getChildren()) {
                     String topicName = topicSnapshot.getKey();
                     int count = (int) topicSnapshot.getChildrenCount();
-                    if (topicName != null) {
+
+                    // Bỏ qua chủ đề "TypingQuiz"
+                    if (topicName != null && !topicName.equals("TypingQuiz")) {
                         topicList.add(new TopicData(topicName, count));
                     }
                 }
