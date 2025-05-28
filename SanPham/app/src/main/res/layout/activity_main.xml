@@ -52,6 +52,24 @@
                     android:textSize="20sp"
                     android:textColor="@color/background_light"
                     android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtAchievement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏅 Danh hiệu: ..."
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/background_light"
+                    android:layout_gravity="center" />
+                <Button
+                    android:id="@+id/btnResetProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔁 Đặt lại tiến trình"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    />
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

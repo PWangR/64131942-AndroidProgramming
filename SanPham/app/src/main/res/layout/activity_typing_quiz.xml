@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:dividerPadding="12dp">
+
+        <!-- Số câu hỏi -->
+        <TextView
+            android:id="@+id/txtQuestionIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu hỏi 1 / 10"
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <!-- Câu hỏi chính -->
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Câu hỏi sẽ hiển thị ở đây"
+            android:textColor="#212121"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Nhập đáp án -->
+        <EditText
+            android:id="@+id/edtAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="✏️ Nhập đáp án của bạn"
+            android:inputType="textCapSentences"
+            android:padding="14dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:background="@drawable/card_bg" />
+
+        <!-- Nút kiểm tra -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Kiểm tra"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="14dp" />
+
+        <!-- Kết quả phản hồi -->
+        <TextView
+            android:id="@+id/txtFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:gravity="center"
+            android:padding="8dp"
+            android:visibility="gone" />
+
+        <!-- Linh vật -->
+        <ImageView
+            android:id="@+id/imgMascot"
+            android:layout_width="236dp"
+            android:layout_height="454dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Linh vật"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mascot_default" />
+
+    </LinearLayout>
+</ScrollView>

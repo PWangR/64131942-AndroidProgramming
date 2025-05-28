@@ -13,11 +13,13 @@ public class QuizProgressManager {
         editor = sharedPreferences.edit();
     }
 
-    // Lưu tổng số sao (cộng dồn)
+    // Gọi khi người chơi đạt điểm tuyệt đối
     public void addStarIfPerfectScore(int score) {
         if (score >= 10) {
             int currentStars = getTotalStars();
-            editor.putInt("total_stars", currentStars + 1);
+            int newStars = currentStars + 1;
+            editor.putInt("total_stars", newStars);
+            updateAchievement(newStars); // Cập nhật danh hiệu
             editor.apply();
         }
     }
@@ -26,6 +28,34 @@ public class QuizProgressManager {
         return sharedPreferences.getInt("total_stars", 0);
     }
 
-    // (các hàm khác: saveHighScore, getHighScore, incrementQuizCount,... vẫn giữ nguyên)
+    // Cập nhật danh hiệu dựa vào tổng số sao
+    private void updateAchievement(int stars) {
+        String achievement = "";
+
+        if (stars >= 30) {
+            achievement = "Code Master";
+        } else if (stars >= 20) {
+            achievement = "Lập trình viên";
+        } else if (stars >= 10) {
+            achievement = "Coder tập sự";
+        } else if (stars >= 5) {
+            achievement = "Người mới học";
+        }
+
+        if (!achievement.isEmpty()) {
+            editor.putString("achievement", achievement);
+        }
+    }
+
+    public String getAchievementTitle() {
+        return sharedPreferences.getString("achievement", "Chưa có danh hiệu");
+    }
+
+    public void resetStars() {
+        editor.putInt("total_stars", 0);
+        editor.remove("achievement"); // Xoá danh hiệu nếu có
+        editor.apply();
+    }
+
 }
 
