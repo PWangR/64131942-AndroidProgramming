@@ -8,6 +8,21 @@
 ## 📂 😽SOURCES CODE BÀI TẬP THỰC HÀNH😽
 Dưới đây là danh sách các bài tập thực hành kèm theo hình ảnh minh họa:
 
+### 🔹 SanPhamCuoiKy
+- 📂 [Xem mã nguồn](./SanPham/app/src/main/)
+- 🖼️ Hình ảnh minh họa:
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="./Images/SP1.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP2.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP3.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP4.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP5.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP6.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP7.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP8.png" alt="Fragment" width="300"/>
+    <img src="./Images/SP9.png" alt="Fragment" width="300"/>
+  </div>
+
 ### 🔹 QuanLyChiTieu
 - 📂 [Xem mã nguồn](./QuanLyChiTieu/app/src/main/)
 - 🖼️ Hình ảnh minh họa:
