@@ -66,8 +66,6 @@ public class ResultActivity extends AppCompatActivity {
             Intent intent = new Intent(ResultActivity.this, HistoryActivity.class);
             startActivity(intent);
         });
-
-
     }
 }
 

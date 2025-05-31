@@ -35,13 +35,19 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
         holder.txtTopicName.setText("Chủ đề: " + entry.topic);
         holder.txtScore.setText("Điểm: " + entry.score);
 
-        // Hiển thị sao nếu điểm đủ điều kiện (ví dụ điểm >= 10)
+        // Hiển thị ngày (giả sử entry.date là kiểu long - milliseconds)
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        String formattedDate = sdf.format(entry.date);
+        holder.txtDate.setText("Ngày: " + formattedDate);
+
+        // Hiển thị sao nếu điểm đủ điều kiện
         if (entry.score >= 10) {
             holder.imgStar.setVisibility(View.VISIBLE);
         } else {
             holder.imgStar.setVisibility(View.INVISIBLE);
         }
     }
+
 
     @Override
     public int getItemCount() {
